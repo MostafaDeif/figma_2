@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Epilogue", sans-serif;
+    background-color: #FFFFFF;
+    text-decoration: none;
+    list-style: none;
+    color: #2D2D2D;
+}
+
+nav {
+    background-color: #FFFFFF;
+    height: 80px;
+    width: 100%;
+    position: sticky;
+    left: 0;
+    top: 0;
+}
+
+label img {
+    width: 49px;
+    height: 30px;
+    margin-top: 25px;
+    margin-left: 50px;
+}
+
+nav ul {
+    width: 480px;
+    height: 28px;
+    float: right;
+    margin-top: 26px;
+    margin-right: 50px;
+}
+
+nav ul li {
+    display: inline-block; 
+    margin: 0 10px;
+    padding: 0 5px;
+}
+
+nav ul li a {
+    line-height: 28px;
+    color: #2D2D2D;
+    size: 17;
+}
+
+a.active,a:hover {
+    color: #1576D6;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: #2D2D2D;
+    float: right;
+    line-height: 80px;
+    margin-right: 50px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media screen and (min-width: 0px) and (max-width: 767px) {
+    .checkbtn {
+        display: block;
+    }
+    
+    nav {
+        width: 100%;
+    }
+
+    nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #FFFFFF;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        -o-transition: all 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+        width: 100%;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+        width: 100%;
+    }
+
+    a:hover,a.active {
+        background: none;
+        color: #1576D6;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+}
+
+
+/*  */
+
+.five{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.Contact{
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 200px;
+}
+
+.left_contact{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+
+.left_contact h2{
+    font-family: Epilogue;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 42px;
+    text-align: left;
+
+}
+
+.left_contact p{
+    width: 360px;
+    height: 108px;
+    font-family: Epilogue;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+
+}
+
+.social_contact{
+    display: flex;
+    gap: 13px;
+}
+
+.social_contact img{
+    width:  36px;
+    height: 36px;
+}
+
+#in1 , #in2 , #in3{
+    width: 530px;
+    height: 69px;
+    padding: 21px 30px 21px 30px;
+    gap: 10px;
+    font-family: Epilogue;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+    background-color: #F3F3F3;
+    border: none;
+    color: #2D2D2D;
+}
+
+#in3{
+    height: 231px;
+}
+
+.btn_contact{
+    cursor: pointer;
+    width: 199px;
+    height: 66px;
+    padding: 18px 64px 18px 64px;
+    gap: 10px;
+    background: #2D2D2D;
+    font-family: Epilogue;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.right_contact{
+    width: 40%;
+    height: 100%;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 0px) and (max-width: 767px) {
+    .five {
+        height: 910px;
+        padding: 0 30px 40px 30px;
+    }
+
+    .Contact {
+        padding: 20px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .left_contact {
+        gap: 20px;
+    }
+
+    .left_contact h2 {
+        height: 84px;
+    }
+
+    .left_contact p {
+        height: 135px;
+        width: 100%;
+    }
+
+    .right_contact {
+        width: 100%;
+    }
+
+    .right_contact #in1, .right_contact #in2, .right_contact #in3 {
+        width: 100%;
+        padding: 20px;
+    }
+}
+
